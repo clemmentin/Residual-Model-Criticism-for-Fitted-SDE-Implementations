@@ -1,0 +1,98 @@
+{
+  "out_dir": "experiments/feedback_weight_selection/results/fit11",
+  "training": 1024,
+  "training_simulations": 2047,
+  "interval_tolerance": 0.001,
+  "pilot": 2048,
+  "cells": 16,
+  "evaluation": 0,
+  "seed": 976011001,
+  "alpha": 0.024,
+  "bound_method": "extrema",
+  "check_only": false,
+  "training_only": false,
+  "marginal_test": true,
+  "reuse_training": null,
+  "state_form": "direct",
+  "selected": "pooled",
+  "true_kappa": 1.0,
+  "horizon": 20,
+  "substeps": 4,
+  "references": 499,
+  "gamma": 0.0025,
+  "eta": 0.0025,
+  "epsilon": 0.02,
+  "required_power": 0.12,
+  "weak_loading_ratio": 0.2,
+  "parameter_domain": [
+    0.2,
+    3.0
+  ],
+  "seconds": 124.0075935999921,
+  "preparation": {
+    "training": 1024,
+    "statistic": 0.071496992479156,
+    "fitted_kappa": 1.0005727307196726,
+    "simulations": 2047,
+    "tail_rank": 2,
+    "training_failure_bound": 0.001953125,
+    "parameter_domain": [
+      0.2,
+      3.0
+    ],
+    "outer_intervals": [
+      [
+        0.9444335937500001,
+        1.06201171875
+      ]
+    ],
+    "cells_evaluated": 39,
+    "tolerance": 0.001,
+    "inversion_seconds": 92.11167600000044,
+    "covers": true,
+    "pooled_covariance": [
+      [
+        0.5291431101538205,
+        0.134782642193483
+      ],
+      [
+        0.134782642193483,
+        0.0831691263293815
+      ]
+    ],
+    "weights": [
+      [
+        0.51422119140625,
+        0.0,
+        0.51422119140625
+      ],
+      [
+        0.5291431101538205,
+        0.2547186944460111,
+        0.04883746767587367
+      ],
+      [
+        0.5291431101538205,
+        0.2547186944460111,
+        0.058848925570471895
+      ],
+      [
+        0.5291431101538205,
+        0.2547186944460111,
+        0.07887184135966835
+      ],
+      [
+        0.5291431101538205,
+        0.2547186944460111,
+        0.1489520466218559
+      ]
+    ]
+  },
+  "candidate_order": [
+    "raw",
+    "pooled",
+    "pooled_ridge_0.01",
+    "pooled_ridge_0.03",
+    "pooled_ridge_0.1"
+  ]
+}

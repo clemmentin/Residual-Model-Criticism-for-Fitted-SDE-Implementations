@@ -1,0 +1,41 @@
+{
+  "common_settings": {
+    "replicates": 12,
+    "train_paths": [
+      48,
+      192
+    ],
+    "epochs": 3000,
+    "training_steps": 112,
+    "substeps": 10,
+    "horizon": 60,
+    "pilot_paths": 2500,
+    "cdf_paths": 8192,
+    "reference_size": 2500,
+    "path_batch": 256,
+    "seed": 2026090907,
+    "truth_sigma": 0.42,
+    "teacher": "fixed eight-active-unit tanh drift in width-16 fitted class",
+    "fit_width": 16,
+    "learning_rate": 0.003,
+    "weight_decay": 0.0001,
+    "score": "native six-feature S_CE, tangent scalar coordinate 2",
+    "jax_version": "0.9.0.1",
+    "backend": "cpu",
+    "python": "3.13.6 (tags/v3.13.6:4e66535, Aug  6 2025, 14:36:00) [MSC v.1944 64 bit (AMD64)]"
+  },
+  "max_prefix_difference": 0.0,
+  "max_normalization_difference": 0.0,
+  "max_oracle_array_difference": 0.0,
+  "teacher_parameters_equal": true,
+  "unique_conditional_comparisons": 60,
+  "simultaneous_confidence": 0.95,
+  "library_versions": {
+    "numpy": "2.4.2",
+    "scipy": "1.17.0",
+    "pandas": "3.0.1",
+    "optax": "0.2.7",
+    "matplotlib": "3.10.8"
+  },
+  "scope": "CDF and rejection-probability Monte Carlo error conditional on these realized analysis states"
+}

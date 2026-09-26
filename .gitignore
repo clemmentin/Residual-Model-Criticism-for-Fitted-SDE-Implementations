@@ -1,0 +1,50 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+.venv/
+venv/
+.env
+.env.*
+.idea/
+.vscode/
+Thumbs.db
+.DS_Store
+
+# Large or separately released artifacts.
+cache/
+models/
+/output/*
+*.eqx
+*.npz
+docs/results/images/
+docs/images/
+
+# Generated manuscript files.
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.pdf
+
+# Local scratch and backup trees.
+tmp/
+$out/
+$t/
+reproducibility_backup_*/
+temp_*.py
+test.py
+inspect_gbr.py
+tmp_paper.txt
+
+# Small numerical sources for the current neural comparison figure.
+!/output/neural_training_comparison/
+/output/neural_training_comparison/*
+!/output/neural_training_comparison/*.csv
+!/output/neural_training_comparison/*.json
+!/output/neural_training_comparison/README.md

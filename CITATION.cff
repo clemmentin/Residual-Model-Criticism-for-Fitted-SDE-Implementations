@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the main manuscript and this source release."
+type: software
+title: "Goodness-of-Fit Testing via Numerical SDE Residuals"
+abstract: "Source release for finite-grid goodness-of-fit testing of fitted SDE implementations, including linear simulations, nonlinear weight selection with feedback, neural fitting comparisons and SIR diagnostics."
+authors:
+  - family-names: Zheng
+    given-names: Shengda
+version: "1.0.0"
+date-released: "2026-09-03"
+# No software DOI has been assigned. The separate data deposit is described in README.md.
+license: GPL-3.0-only
+keywords:
+  - stochastic differential equations
+  - neural SDEs
+  - SIR model
+  - finite-step testing
+  - reproducibility

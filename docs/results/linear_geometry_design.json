@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "protocol_id": "linear_geometry_mechanism",
+  "role": "New design-fixed synthetic mechanism experiment; independent of all historical SIR endpoints and results. Local pre-run freeze, not third-party preregistration.",
+  "model": {
+    "equations": "dX1=sigma1*dW1; dX2=kappa*X1*dt+sigma2*dW2; independent Brownian drivers",
+    "reference_target": "Exact conditional transition law of the stated L-substep explicit Euler implementation, not the continuous-time transition law",
+    "H": 1.0,
+    "sigma1": 1.0,
+    "sigma2": 1.0,
+    "kappa_grid": [0.0, 0.5, 1.5, 3.0],
+    "L_grid": [1, 2, 5, 10],
+    "scored_transitions": 40,
+    "mean": "Same exact Euler zero-noise transition mean for both coordinates; all alternatives retain the drift",
+    "support_boundary": "sigma2=0 is a theoretical support example only, excluded from the main power grid"
+  },
+  "coordinates": {
+    "instantaneous": "Sigma_inst=H*diag(sigma1^2,sigma2^2)",
+    "finite_step": "Sigma_step is the closed-form L-substep Euler covariance, equal to the tangent covariance in this linear family",
+    "score": "T=(1/(2*K))*sum_k r_k^T Sigma^{-1} r_k; full two-dimensional upper-tail energy; no pilot, fitted covariance, regularization, or score adaptation",
+    "inversion": "Float64 analytic 2x2 Cholesky; fail rather than regularize if non-positive or non-finite",
+    "condition_number_warning": 10000000000.0
+  },
+  "alternatives": [
+    {"name": "null", "sigma1_multiplier": 1.0, "sigma2_multiplier": 1.0},
+    {"name": "driver1_1p10", "sigma1_multiplier": 1.1, "sigma2_multiplier": 1.0},
+    {"name": "driver1_1p25", "sigma1_multiplier": 1.25, "sigma2_multiplier": 1.0},
+    {"name": "driver2_1p10", "sigma1_multiplier": 1.0, "sigma2_multiplier": 1.1},
+    {"name": "driver2_1p25", "sigma1_multiplier": 1.0, "sigma2_multiplier": 1.25},
+    {"name": "uniform_1p10", "sigma1_multiplier": 1.1, "sigma2_multiplier": 1.1},
+    {"name": "uniform_1p25", "sigma1_multiplier": 1.25, "sigma2_multiplier": 1.25}
+  ],
+  "monte_carlo": {
+    "outer_replicates": 5000,
+    "reference_paths_per_replicate": 499,
+    "alpha": 0.05,
+    "master_seed": 2026082807,
+    "block_size": 100,
+    "p_value": "(1 + count(reference_score >= held_score))/(M+1)",
+    "pairing": "Within each geometry cell, both coordinates use exactly the same reference and held-out draws. Alternatives share held-out standard-normal scatter draws. Every outer replicate has its own independent reference bank.",
+    "sampling": "Bartlett Wishart(2,K,I) scatter matrices are exact sufficient draws for the K independent Gaussian Euler residuals; no microstep-path or time discretization approximation is introduced",
+    "seed_rule": "NumPy PCG64 with SeedSequence([master_seed,geometry_index,stream]); stream 0 for reference scatters, stream 1 for independent held-out scatters; ISO order not applicable"
+  },
+  "analysis": {
+    "primary_estimand": "D=P(p_finite_step<=alpha)-P(p_instantaneous<=alpha), separately for every non-null geometry/alternative cell",
+    "primary_family_size": 96,
+    "paired_difference_interval": "Difference bounds from Clopper-Pearson intervals for p10 and p01, Bonferroni over the four tails; pointwise 95% and familywise 95% over all 96 predeclared non-null cells",
+    "rejection_rate_intervals": "Pointwise 95% Clopper-Pearson binomial intervals",
+    "null_calibration_intervals": "Familywise 95% Clopper-Pearson intervals over the 32 coordinate-by-geometry null rates; target floor(alpha*(M+1))/(M+1)=0.05",
+    "equivalence_margin": 0.02,
+    "classification": "Equivalent only if simultaneous D interval is contained in [-0.02,0.02]; materially higher/lower only if the entire interval is above +0.02/below -0.02; otherwise unresolved. Numerical stability is a separate flag.",
+    "negative_controls": "kappa=0 or L=1 implies identical covariance maps, scores and ranks, checked pathwise within floating-point tolerance",
+    "reporting": "Report every predeclared cell, including nulls, equivalence, lower power, unresolved comparisons and numerical failures. Do not pool distinct strengths into a primary effect. No optional stopping or grid changes after run freeze.",
+    "limitations": "Known linear implementation, constant covariance, upper-tail full-vector energy, no fitting uncertainty. Not a power analysis of SIR S_CE, not a general superiority claim for tangent coordinates. Matrix reweighting, unlike scalar rescaling of homogeneous energy, can change ranks."
+  }
+}

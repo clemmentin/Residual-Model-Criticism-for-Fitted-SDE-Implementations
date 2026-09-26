@@ -1,0 +1,6 @@
+{
+  "score_envelope_violation": 0.0,
+  "training_envelope_violation": 0.0,
+  "literal_euler_score_error": 1.3322676295501878e-15,
+  "training_unrolling_error": 2.7755575615628914e-17
+}

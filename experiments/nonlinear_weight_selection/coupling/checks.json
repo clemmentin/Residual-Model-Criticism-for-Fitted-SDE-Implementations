@@ -1,0 +1,16 @@
+{
+  "scale_equivariance_error": 0.0,
+  "score_polynomial_max_error": 1.1368683772161603e-13,
+  "confidence_endpoint_pivot_error": 2.566196144471178e-10,
+  "finite_rank_integration_error": 6.938893903907228e-18,
+  "result_rows": 1536,
+  "unique_training_fits": 192,
+  "pilot_cells": 240,
+  "uncovered_training_intervals": 1,
+  "maximum_selected_cdf_bound": 0.01985379873424291,
+  "maximum_selected_level_bound": 0.018715006325391484,
+  "full_and_level_identical_for_n_at_least_1024": true,
+  "normalized_solver_max_change_from_saved_fits": 5.1736392947532295e-14,
+  "scale_equivariance_extreme_scales_error": 2.220446049250313e-16,
+  "reference_null_inside_all_relevant_rejection_bounds": true
+}

@@ -1,0 +1,48 @@
+{
+  "seed": 2026092141,
+  "samples": [
+    262144,
+    2097152
+  ],
+  "ridges": [
+    0,
+    0.001,
+    0.003,
+    0.01,
+    0.03,
+    0.1,
+    0.3
+  ],
+  "batch": 32768,
+  "training_paths": 1024,
+  "fit": {
+    "training_paths": "1024",
+    "fit": "0",
+    "fitted_ratio": "1.0027265758403694",
+    "lower": "-0.012948637968624443",
+    "upper": "0.029633906644098706",
+    "error": "-0.002719161839392026",
+    "selected_ridge": "0.3",
+    "selected_bound": "0.01985379873424291",
+    "level_ridge": "0",
+    "level_bound": "0.012251786181793123",
+    "covers": "True"
+  },
+  "horizon": 20,
+  "references": 499,
+  "alpha": 0.05,
+  "tolerance": 0.02,
+  "training_failure": 0.0025,
+  "joint_simulation_failure": 0.0025,
+  "joint_cdf_count": 1162,
+  "partition_sizes": {
+    "original_cover": 4,
+    "clip_to_interval": 4,
+    "split_32": 32
+  },
+  "exploratory_seed": 2026092140,
+  "seconds": 347.42402310000034,
+  "python": "3.13.6 (tags/v3.13.6:4e66535, Aug  6 2025, 14:36:00) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "2.4.2",
+  "scipy": "1.17.0"
+}

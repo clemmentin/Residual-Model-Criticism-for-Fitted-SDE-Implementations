@@ -1,0 +1,91 @@
+{
+  "normalization_matches_saved_baseline_exactly": true,
+  "prefix_matches_saved_baseline_exactly": true,
+  "loss_gradient_checks": [
+    {
+      "variance": "plugin",
+      "parameters": 0,
+      "loss_error": 5.551115123125783e-17,
+      "gradient_max_abs_errors": {
+        "b1": 1.1926223897340549e-17,
+        "b2": 4.336808689942018e-17,
+        "log_sigma": 0.0,
+        "w1": 9.71445146547012e-17,
+        "w2": 5.551115123125783e-17
+      }
+    },
+    {
+      "variance": "plugin",
+      "parameters": 1,
+      "loss_error": 5.551115123125783e-17,
+      "gradient_max_abs_errors": {
+        "b1": 1.0408340855860843e-17,
+        "b2": 9.540979117872439e-18,
+        "log_sigma": 0.0,
+        "w1": 7.632783294297951e-17,
+        "w2": 5.551115123125783e-17
+      }
+    },
+    {
+      "variance": "plugin",
+      "parameters": 2,
+      "loss_error": 1.1102230246251565e-16,
+      "gradient_max_abs_errors": {
+        "b1": 3.8163916471489756e-17,
+        "b2": 7.632783294297951e-17,
+        "log_sigma": 0.0,
+        "w1": 1.1449174941446927e-16,
+        "w2": 1.249000902703301e-16
+      }
+    },
+    {
+      "variance": "tangent",
+      "parameters": 0,
+      "loss_error": 5.551115123125783e-17,
+      "gradient_max_abs_errors": {
+        "b1": 2.2551405187698492e-17,
+        "b2": 9.194034422677078e-17,
+        "log_sigma": 0.0,
+        "w1": 1.6653345369377348e-16,
+        "w2": 2.220446049250313e-16
+      }
+    },
+    {
+      "variance": "tangent",
+      "parameters": 1,
+      "loss_error": 5.551115123125783e-17,
+      "gradient_max_abs_errors": {
+        "b1": 2.992397996059992e-17,
+        "b2": 4.85722573273506e-17,
+        "log_sigma": 2.7755575615628914e-17,
+        "w1": 1.4224732503009818e-16,
+        "w2": 8.326672684688674e-17
+      }
+    },
+    {
+      "variance": "tangent",
+      "parameters": 2,
+      "loss_error": 1.1102230246251565e-16,
+      "gradient_max_abs_errors": {
+        "b1": 4.2500725161431774e-17,
+        "b2": 1.3877787807814457e-17,
+        "log_sigma": 0.0,
+        "w1": 9.540979117872439e-17,
+        "w2": 2.220446049250313e-16
+      }
+    }
+  ],
+  "updates": 100,
+  "training_paths": 192,
+  "parameter_difference_after_updates": {
+    "b1": 1.8041124150158794e-16,
+    "b2": 3.469446951953614e-18,
+    "log_sigma": 0.0,
+    "w1": 8.326672684688674e-17,
+    "w2": 5.551115123125783e-17
+  },
+  "timing_seconds": {
+    "standard": 13.412781499995617,
+    "batched": 7.070955799979856
+  }
+}

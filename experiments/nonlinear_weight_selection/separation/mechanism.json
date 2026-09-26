@@ -1,0 +1,19 @@
+{
+  "witness_d": 0.029633906644098706,
+  "weighted_positive": 1.2617313351794318e-06,
+  "weighted_negative": 0.0007686242403239631,
+  "weighted_absolute": 0.0007698859716591425,
+  "signed_rejection_deviation": 0.0007673625089887842,
+  "direct_rejection_deviation": 0.0007673625089887753,
+  "discrete_identity_error": 8.890457814381136e-18,
+  "beta_central_95": [
+    0.9292794512159149,
+    0.9673189312733055
+  ],
+  "positive_lower": 0.0,
+  "positive_upper": 0.0030585291813718654,
+  "negative_lower": 3.604484274813815e-10,
+  "negative_upper": 0.004594840134280024,
+  "weighted_absolute_upper": 0.004597140305259676,
+  "integration_nodes": 8193
+}

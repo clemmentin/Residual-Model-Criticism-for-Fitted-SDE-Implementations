@@ -1,0 +1,22 @@
+{
+  "training": 1024,
+  "statistic": 0.07260130256993527,
+  "fitted_kappa": 1.0091478618104779,
+  "simulations": 2047,
+  "tail_rank": 2,
+  "training_failure_bound": 0.001953125,
+  "parameter_domain": [
+    0.2,
+    3.0
+  ],
+  "outer_intervals": [
+    [
+      0.9581054687500001,
+      1.0654296875
+    ]
+  ],
+  "cells_evaluated": 39,
+  "tolerance": 0.001,
+  "inversion_seconds": 88.52934929999174,
+  "covers": true
+}

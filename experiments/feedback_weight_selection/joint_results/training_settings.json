@@ -1,0 +1,46 @@
+{
+  "seed": 989000001,
+  "training": 1024,
+  "observations": 4,
+  "simulations": 2047,
+  "domain": [
+    [
+      0.2,
+      3.0
+    ],
+    [
+      0.5,
+      1.5
+    ]
+  ],
+  "fitted": [
+    0.9773434597248137,
+    0.9971991060439543
+  ],
+  "fit_criterion": 5.341287286077272e-14,
+  "fit_success": true,
+  "observed_components": [
+    0.6231511264124245,
+    0.545797815911861,
+    0.5195372092756863
+  ],
+  "y_gap_derivatives": [
+    0.8006603851928584,
+    0.2453952047361957
+  ],
+  "slope": -0.30649100326986495,
+  "offsets": [
+    -0.08,
+    -0.06,
+    -0.04,
+    -0.02,
+    0.0,
+    0.02,
+    0.04,
+    0.06,
+    0.08
+  ],
+  "joint_failure_bound": 0.001953125,
+  "seconds": 31.387071000004653,
+  "status": "pointwise ranks only; no continuous-set claim"
+}

@@ -1,0 +1,15 @@
+{
+  "direct_euler_score_error": 1.7763568394002505e-15,
+  "ks_statistic_error": 4.163336342344337e-17,
+  "discrete_integral_identity_error": 8.890457814381136e-18,
+  "lower_cdf_gap": 0.021273556472747625,
+  "upper_cdf_gap": 0.028529223678619563,
+  "upper_rejection_deviation": 0.004520578186075569,
+  "separation_established": true,
+  "training_interval_unchanged": true,
+  "point_rows": 28,
+  "refinement_rows": 42,
+  "joint_simulation_failure": 0.0025,
+  "certified_ridge_point_one_cdf_upper": 0.01803213047793597,
+  "absolute_weighted_error_upper": 0.004597140305259676
+}

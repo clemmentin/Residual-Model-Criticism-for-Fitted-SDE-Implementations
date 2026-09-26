@@ -1,0 +1,295 @@
+{
+  "snapshot": "cache/owid_covid_data.csv",
+  "eligibility": {
+    "european_entities": 50,
+    "population_at_least_1e6": 35,
+    "candidates_after_prior_use": 22,
+    "reconstructed_pool": [
+      "ALB",
+      "BGR",
+      "BIH",
+      "BLR",
+      "CZE",
+      "EST",
+      "GRC",
+      "HRV",
+      "HUN",
+      "IRL",
+      "LTU",
+      "LVA",
+      "MDA",
+      "MKD",
+      "POL",
+      "PRT",
+      "ROU",
+      "RUS",
+      "SRB",
+      "SVK",
+      "SVN",
+      "UKR"
+    ],
+    "recorded_pool": [
+      "ALB",
+      "BGR",
+      "BIH",
+      "BLR",
+      "CZE",
+      "EST",
+      "GRC",
+      "HRV",
+      "HUN",
+      "IRL",
+      "LTU",
+      "LVA",
+      "MDA",
+      "MKD",
+      "POL",
+      "PRT",
+      "ROU",
+      "RUS",
+      "SRB",
+      "SVK",
+      "SVN",
+      "UKR"
+    ],
+    "in_recorded_not_reconstructed": [],
+    "in_reconstructed_not_recorded": [],
+    "removed_by_completeness": [],
+    "per_country": [
+      {
+        "iso": "ALB",
+        "verdict": "eligible",
+        "missing_calendar_days": 0,
+        "missing_smoothed": 0,
+        "zero_smoothed": 0
+      },
+      {
+        "iso": "BGR",
+        "verdict": "eligible",
+        "missing_calendar_days": 0,
+        "missing_smoothed": 0,
+        "zero_smoothed": 0
+      },
+      {
+        "iso": "BIH",
+        "verdict": "eligible",
+        "missing_calendar_days": 0,
+        "missing_smoothed": 0,
+        "zero_smoothed": 0
+      },
+      {
+        "iso": "BLR",
+        "verdict": "eligible",
+        "missing_calendar_days": 0,
+        "missing_smoothed": 0,
+        "zero_smoothed": 0
+      },
+      {
+        "iso": "CZE",
+        "verdict": "eligible",
+        "missing_calendar_days": 0,
+        "missing_smoothed": 0,
+        "zero_smoothed": 0
+      },
+      {
+        "iso": "EST",
+        "verdict": "eligible",
+        "missing_calendar_days": 0,
+        "missing_smoothed": 0,
+        "zero_smoothed": 0
+      },
+      {
+        "iso": "GRC",
+        "verdict": "eligible",
+        "missing_calendar_days": 0,
+        "missing_smoothed": 0,
+        "zero_smoothed": 0
+      },
+      {
+        "iso": "HRV",
+        "verdict": "eligible",
+        "missing_calendar_days": 0,
+        "missing_smoothed": 0,
+        "zero_smoothed": 0
+      },
+      {
+        "iso": "HUN",
+        "verdict": "eligible",
+        "missing_calendar_days": 0,
+        "missing_smoothed": 0,
+        "zero_smoothed": 0
+      },
+      {
+        "iso": "IRL",
+        "verdict": "eligible",
+        "missing_calendar_days": 0,
+        "missing_smoothed": 0,
+        "zero_smoothed": 0
+      },
+      {
+        "iso": "LTU",
+        "verdict": "eligible",
+        "missing_calendar_days": 0,
+        "missing_smoothed": 0,
+        "zero_smoothed": 0
+      },
+      {
+        "iso": "LVA",
+        "verdict": "eligible",
+        "missing_calendar_days": 0,
+        "missing_smoothed": 0,
+        "zero_smoothed": 0
+      },
+      {
+        "iso": "MDA",
+        "verdict": "eligible",
+        "missing_calendar_days": 0,
+        "missing_smoothed": 0,
+        "zero_smoothed": 0
+      },
+      {
+        "iso": "MKD",
+        "verdict": "eligible",
+        "missing_calendar_days": 0,
+        "missing_smoothed": 0,
+        "zero_smoothed": 0
+      },
+      {
+        "iso": "POL",
+        "verdict": "eligible",
+        "missing_calendar_days": 0,
+        "missing_smoothed": 0,
+        "zero_smoothed": 0
+      },
+      {
+        "iso": "PRT",
+        "verdict": "eligible",
+        "missing_calendar_days": 0,
+        "missing_smoothed": 0,
+        "zero_smoothed": 0
+      },
+      {
+        "iso": "ROU",
+        "verdict": "eligible",
+        "missing_calendar_days": 0,
+        "missing_smoothed": 0,
+        "zero_smoothed": 0
+      },
+      {
+        "iso": "RUS",
+        "verdict": "eligible",
+        "missing_calendar_days": 0,
+        "missing_smoothed": 0,
+        "zero_smoothed": 0
+      },
+      {
+        "iso": "SRB",
+        "verdict": "eligible",
+        "missing_calendar_days": 0,
+        "missing_smoothed": 0,
+        "zero_smoothed": 0
+      },
+      {
+        "iso": "SVK",
+        "verdict": "eligible",
+        "missing_calendar_days": 0,
+        "missing_smoothed": 0,
+        "zero_smoothed": 0
+      },
+      {
+        "iso": "SVN",
+        "verdict": "eligible",
+        "missing_calendar_days": 0,
+        "missing_smoothed": 0,
+        "zero_smoothed": 0
+      },
+      {
+        "iso": "UKR",
+        "verdict": "eligible",
+        "missing_calendar_days": 0,
+        "missing_smoothed": 0,
+        "zero_smoothed": 0
+      }
+    ]
+  },
+  "window_placement": [
+    {
+      "iso": "FIN",
+      "nominal_start": "2022-04-02",
+      "nominal_end": "2022-06-01",
+      "series_end": "2024-03-31",
+      "record_end": "2024-08-04",
+      "series_ends_at_record_end": false,
+      "threshold_x0.5": 10,
+      "threshold_x2": -9,
+      "threshold_x5": -21,
+      "memory_14d": -38,
+      "memory_56d": 63
+    },
+    {
+      "iso": "NOR",
+      "nominal_start": "2022-06-04",
+      "nominal_end": "2022-08-03",
+      "series_end": "2024-08-04",
+      "record_end": "2024-08-04",
+      "series_ends_at_record_end": true,
+      "threshold_x0.5": 0,
+      "threshold_x2": 0,
+      "threshold_x5": 1,
+      "memory_14d": 0,
+      "memory_56d": 0
+    },
+    {
+      "iso": "SWE",
+      "nominal_start": "2022-06-04",
+      "nominal_end": "2022-08-03",
+      "series_end": "2024-08-04",
+      "record_end": "2024-08-04",
+      "series_ends_at_record_end": true,
+      "threshold_x0.5": 0,
+      "threshold_x2": 1,
+      "threshold_x5": 2,
+      "memory_14d": 0,
+      "memory_56d": 0
+    },
+    {
+      "iso": "LTU",
+      "nominal_start": "2022-06-16",
+      "nominal_end": "2022-08-15",
+      "series_end": "2024-08-14",
+      "record_end": "2024-08-14",
+      "series_ends_at_record_end": true,
+      "threshold_x0.5": -2,
+      "threshold_x2": 0,
+      "threshold_x5": 2,
+      "memory_14d": 0,
+      "memory_56d": 0
+    },
+    {
+      "iso": "MDA",
+      "nominal_start": "2022-06-09",
+      "nominal_end": "2022-08-08",
+      "series_end": "2024-08-04",
+      "record_end": "2024-08-04",
+      "series_ends_at_record_end": true,
+      "threshold_x0.5": -1,
+      "threshold_x2": 2,
+      "threshold_x5": 5,
+      "memory_14d": 0,
+      "memory_56d": 0
+    },
+    {
+      "iso": "SVN",
+      "nominal_start": "2022-06-04",
+      "nominal_end": "2022-08-03",
+      "series_end": "2024-08-04",
+      "record_end": "2024-08-04",
+      "series_ends_at_record_end": true,
+      "threshold_x0.5": 0,
+      "threshold_x2": 1,
+      "threshold_x5": 2,
+      "memory_14d": 0,
+      "memory_56d": 0
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "requirements_file": "requirements.txt",
+  "required_environment_packages": [
+    "diffrax",
+    "equinox",
+    "jax",
+    "jaxlib",
+    "matplotlib",
+    "numpy",
+    "optax",
+    "pandas",
+    "requests",
+    "scipy",
+    "signax",
+    "statsmodels",
+    "tqdm"
+  ],
+  "expected_figure_count": 11,
+  "figures": {
+    "01_main_motivation": "experiments/make_manuscript_figures.py",
+    "02_main_geometry": "experiments/make_manuscript_figures.py",
+    "03_main_sensitivity": "experiments/make_manuscript_figures.py",
+    "10_main_weight_selection": "experiments/make_manuscript_figures.py",
+    "05_fixed_calendar": "experiments/make_manuscript_figures.py",
+    "09_main_mda_dependence": "experiments/make_manuscript_figures.py",
+    "11_supp_feedback_selection": "experiments/make_manuscript_figures.py",
+    "08_main_neural_matching": "experiments/make_manuscript_figures.py",
+    "06_country_energy": "experiments/make_manuscript_figures.py",
+    "07_window_energy": "experiments/make_manuscript_figures.py",
+    "paper1_nordic_window_sensitivity": "experiments/make_manuscript_figures.py"
+  },
+  "current_table_sources": {
+    "nonlinear-weights": "experiments/nonlinear_weight_selection/coupling/results.csv",
+    "ce-conditional": "output/neural_training_comparison/combined_results.csv",
+    "internal-p-full": "experiments/summarize_full_refit_calibration.py",
+    "joint-feedback-exclusion": "experiments/feedback_weight_selection/joint_point_check.py"
+  }
+}

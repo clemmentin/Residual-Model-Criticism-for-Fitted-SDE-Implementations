@@ -1,0 +1,37 @@
+{
+  "seed": 991000001,
+  "pilot": 32768,
+  "references": 499,
+  "eta": 0.0025,
+  "per_comparison_tail": 0.00125,
+  "point": [
+    "high_sigma",
+    0.9650838195940191,
+    1.0371991060439543
+  ],
+  "fitted": [
+    0.9773434597248137,
+    0.9971991060439543
+  ],
+  "candidates": [
+    "pooled",
+    "pooled_ridge_0.01"
+  ],
+  "results": [
+    {
+      "method": "pooled",
+      "estimate": 0.051422119140625,
+      "one_sided_lower": 0.04780635771586259,
+      "excluded": true
+    },
+    {
+      "method": "pooled_ridge_0.01",
+      "estimate": 0.05096435546875,
+      "one_sided_lower": 0.04736425096035951,
+      "excluded": true
+    }
+  ],
+  "reference_paths": 16351232,
+  "seconds": 89.21018829999957,
+  "status": "fresh independent pointwise lower bounds; combine with prior low-power event by union bound"
+}
