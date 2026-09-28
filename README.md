@@ -15,8 +15,8 @@ and neural fitting comparisons are reported in the supplement.
 Use Python 3.12. Clone the repository and run commands from its root:
 
 ```text
-git clone https://github.com/clemmentin/Goodness-of-Fit-Testing-via-Numerical-SDE-Residuals.git
-cd Goodness-of-Fit-Testing-via-Numerical-SDE-Residuals
+git clone https://github.com/clemmentin/Residual-Model-Criticism-for-Fitted-SDE-Implementations.git
+cd Residual-Model-Criticism-for-Fitted-SDE-Implementations
 ```
 
 ```powershell
