@@ -17,8 +17,8 @@ calls both and writes PDFs and PNGs to `output/figures/`.
 | --- | --- | --- |
 | Main `audit-motivation` | `01_main_motivation.pdf` | current figure builder |
 | Main `finite-grid-motivation` | `02_main_geometry.pdf` | current figure builder |
-| Main `linear-coordinate-sensitivity` | `03_main_sensitivity.pdf` | current figure builder |
-| Main `nonlinear-weights` | `10_main_weight_selection.pdf` | current figure builder |
+| Supplement `linear-coordinate-sensitivity` | `03_main_sensitivity.pdf` | current figure builder |
+| Supplement `nonlinear-weights` | `10_main_weight_selection.pdf` | current figure builder |
 | Main `sir-fixed-calendar-paths` | `05_fixed_calendar.pdf` | current figure builder |
 | Main `sir-mda-dependence` | `09_main_mda_dependence.pdf` | current figure builder |
 | Supplement `feedback-weight-selection` | `11_supp_feedback_selection.pdf` | current figure builder |
@@ -43,11 +43,11 @@ summaries, so no separate intermediate CSV is required.
 | Manuscript label | Numerical source / command |
 | --- | --- |
 | Supplement `nonlinear-weights` | `.\.venv\Scripts\python.exe reproduce.py table1`; aggregates `experiments/nonlinear_weight_selection/coupling/results.csv` at kappa=0.1. |
-| Main `ce-conditional` | `.\.venv\Scripts\python.exe reproduce.py table2`; aggregates `output/neural_training_comparison/combined_results.csv`. |
+| Supplement `ce-conditional` | `.\.venv\Scripts\python.exe reproduce.py table2`; aggregates `output/neural_training_comparison/combined_results.csv`. |
 | Supplement `internal-p-full` | `.\.venv\Scripts\python.exe reproduce.py full-refit`; summarizes 5,000 retained p-values from the matching artifact bundle. |
 | Supplement `coordinate-ablation-strengths` and `coordinate-ablation` | `.\.venv\Scripts\python.exe experiments/summarize_coordinate_ablation.py`; uses the six trial CSVs and metadata in `cache/summaries/coordinate_ablation/`. |
 | Supplement `nonlinear-strong-power` | `experiments/nonlinear_weight_selection/coupling/results.csv`; strong-direction power, averaged over 64 fits. |
-| Main Section 4.3 feedback extension | `.\.venv\Scripts\python.exe experiments/feedback_weight_selection/summarize.py`; recomputes bounds and final ranks from the 16 included fits with overall level below 5%. Full simulation commands are in that directory's README. |
+| Supplementary Section S3.7 feedback extension | `.\.venv\Scripts\python.exe experiments/feedback_weight_selection/summarize.py`; recomputes bounds and final ranks from the 16 included fits with overall level below 5%. Full simulation commands are in that directory's README. |
 | Supplement `joint-feedback-exclusion` | `.\.venv\Scripts\python.exe experiments/feedback_weight_selection/joint_point_check.py`; recomputes five exclusions from the retained training ranks and two independent probability checks. |
 | Supplement `fixed-calendar-holdout-protocol` | Settings and results in `cache/summaries/fixed_calendar_holdout/`; `run_fixed_calendar_holdout.py` and `run_second_fixed_calendar_holdout.py`, each `--phase freeze`, then `--phase evaluate`. |
 | Supplement `sir-analysis-status` | Protocol descriptions and retained outputs; `experiments/build_sir_bi_audit_scorecard.py`. |

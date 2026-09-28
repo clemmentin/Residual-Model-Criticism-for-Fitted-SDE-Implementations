@@ -9,14 +9,14 @@ For the nonlinear and neural comparison tables, install the dependencies and run
 `.\.venv\Scripts\python.exe reproduce.py tables`. Their small per-fit numerical sources are
 included in this release. The command aliases are retained: `table1` is the
 nonlinear weight comparison, now in the supplement, and `table2` is the
-neural conditional-score comparison in the main paper. The supplementary
+neural conditional-score comparison in Supplementary Section S5.2. The supplementary
 5,000-refit benchmark uses `.\.venv\Scripts\python.exe reproduce.py full-refit`
 and requires the artifact bundle.
 
 `.\.venv\Scripts\python.exe reproduce.py figures` builds the eleven current figures and three
 retained historical comparisons. See step 4 for its inputs and the first-run CZE/GRC path replay.
 
-For the feedback extension in Section 4.3, run
+For the feedback extension in Supplementary Section S3.7, run
 `.\.venv\Scripts\python.exe experiments/feedback_weight_selection/summarize.py`.
 It rebuilds the bounds from saved paired counts and replays the 16 final tests
 at internal rank level 0.024; the overall null upper bound is 0.048453125.
@@ -355,7 +355,7 @@ Inputs are the matching `cache/` and `models/` bundle, the included nonlinear
 `coupling/` and `separation/` tables,
 `output/neural_training_comparison/combined_results.csv`, and
 `experiments/feedback_weight_selection/results/fit00/` through `fit15/`.
-The eleven cited figures comprise six in the main paper and five in the
+The eleven cited figures comprise four in the main paper and seven in the
 supplement. The command also retains three earlier comparisons:
 `paper1_geometry_protocol_comparison`, `paper1_nordic_sde_native_audit` and
 `paper1_random_country_replication`.

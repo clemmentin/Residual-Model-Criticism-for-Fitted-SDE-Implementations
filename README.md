@@ -1,9 +1,14 @@
-# Goodness-of-Fit Testing via Numerical SDE Residuals
+# Residual Model Criticism for Fitted SDE Implementations
 
 Reproduction code for the paper, including simulations, residual diagnostics,
 figure builders and small result tables. Manuscript sources are not included.
 Some figures and SIR analyses require the separate data and model bundle
 described below.
+
+The main paper develops residual comparisons with a fixed fitted numerical
+implementation, studies propagation and weighting in a linear family, and
+applies the diagnostic to reconstructed SIR paths. Nonlinear weight selection
+and neural fitting comparisons are reported in the supplement.
 
 ## Installation
 
@@ -34,7 +39,7 @@ Tables are rebuilt from included per-fit estimates and written to
 `output/tables/`; this does not rerun the experiments. Figures go to
 `output/figures/`. Missing CZE/GRC residual paths are regenerated from saved
 models and seeds, so the first figure run can take longer.
-The current paper cites six main figures and five supplementary figures.
+The current paper cites four main figures and seven supplementary figures.
 The builder also retains three figures
 from earlier analyses; these are not cited in the current paper.
 
@@ -43,7 +48,7 @@ Use `--out-dir output/fresh_run` for a fresh fit. Full simulation and neural
 training commands, seeds, and saved-output limitations are in
 [REPRODUCE.md](REPRODUCE.md).
 
-The feedback extension in Section 4.3 is self-contained:
+The feedback extension in Supplementary Section S3.7 is self-contained:
 
 ```powershell
 .\.venv\Scripts\python.exe experiments/feedback_weight_selection/summarize.py
