@@ -13,7 +13,7 @@ neural conditional-score comparison in Supplementary Section S5.2. The supplemen
 5,000-refit benchmark uses `.\.venv\Scripts\python.exe reproduce.py full-refit`
 and requires the artifact bundle.
 
-`.\.venv\Scripts\python.exe reproduce.py figures` builds the eleven current figures and three
+`.\.venv\Scripts\python.exe reproduce.py figures` produces the twelve current figures and three
 retained historical comparisons. See step 4 for its inputs and the first-run CZE/GRC path replay.
 
 For the feedback extension in Supplementary Section S3.7, run
@@ -345,7 +345,7 @@ already present, use them directly instead of overwriting them.
 The exact candidate pool, selected target, window, seeds and score settings are
 in `cache/summaries/fixed_calendar_holdout/causal_window/holdout_freeze.json`.
 
-## 4. Regenerate the eleven cited figures
+## 4. Reproduce the twelve cited figures
 
 ```powershell
 .\.venv\Scripts\python.exe reproduce.py figures
@@ -355,8 +355,10 @@ Inputs are the matching `cache/` and `models/` bundle, the included nonlinear
 `coupling/` and `separation/` tables,
 `output/neural_training_comparison/combined_results.csv`, and
 `experiments/feedback_weight_selection/results/fit00/` through `fit15/`.
-The eleven cited figures comprise four in the main paper and seven in the
-supplement. The command also retains three earlier comparisons:
+The twelve cited figures comprise five in the main paper and seven in the
+supplement. Eleven are generated from numerical inputs; the conceptual
+Figure 2 is copied from `assets/score_comparisons.pdf` without simulation.
+The command also retains three earlier comparisons:
 `paper1_geometry_protocol_comparison`, `paper1_nordic_sde_native_audit` and
 `paper1_random_country_replication`.
 The command reconstructs window-energy ratios from the archived component
@@ -365,7 +367,8 @@ summaries. If CZE/GRC residual files are missing, it runs
 5,000-path banks and comparing all metrics and ranks against retained results.
 It does not refit the epidemic model.
 
-Outputs go to `output/figures/`, which both manuscript wrappers search.
+Outputs go to `output/figures/`. The submission figure filenames are listed
+in `docs/REPRODUCTION_MAP.md`.
 The individual plotting commands are:
 
 ```powershell
@@ -414,7 +417,7 @@ See the included README and `separation.md` for the exact estimators and bounds.
 
 ## 6. Current neural training comparison
 
-Main Table `ce-conditional` and Supplement Figure `ce-training-variance` use the included
+Supplement Table `ce-conditional` and Supplement Figure `ce-training-variance` use the included
 `output/neural_training_comparison/combined_results.csv`.
 To recompute this file from per-path scores, supply the two archived directories
 `output/ce_conditional_fit_pilot/` and

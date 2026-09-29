@@ -4,7 +4,9 @@ This map follows the figures and tables in the main paper and supplement.
 Run commands from the release root. `.\.venv\Scripts\python.exe reproduce.py tables` rebuilds
 the nonlinear and neural comparison tables from included per-fit results.
 `.\.venv\Scripts\python.exe reproduce.py figures`
-builds the eleven cited figures and three retained historical comparisons using the matching `cache/` and `models/` bundle.
+generates eleven numerical figures and copies the supplied conceptual diagram,
+covering all twelve cited figures, using the matching `cache/` and `models/`
+bundle where needed. It also retains three historical comparisons.
 
 ## Figures
 
@@ -16,6 +18,7 @@ calls both and writes PDFs and PNGs to `output/figures/`.
 | Manuscript label | PDF file | Generator |
 | --- | --- | --- |
 | Main `audit-motivation` | `01_main_motivation.pdf` | current figure builder |
+| Main `score-comparisons` | `score_comparisons.pdf` | supplied vector diagram in `assets/`; copied by current figure builder |
 | Main `finite-grid-motivation` | `02_main_geometry.pdf` | current figure builder |
 | Supplement `linear-coordinate-sensitivity` | `03_main_sensitivity.pdf` | current figure builder |
 | Supplement `nonlinear-weights` | `10_main_weight_selection.pdf` | current figure builder |
@@ -26,6 +29,23 @@ calls both and writes PDFs and PNGs to `output/figures/`.
 | Supplement `sir-country-patterns` | `06_country_energy.pdf` | current figure builder |
 | Supplement `sir-window-patterns` | `07_window_energy.pdf`, panels (a)--(c) | current figure builder; TeX crops the lower panels |
 | Supplement `nordic-window-sensitivity` | `paper1_nordic_window_sensitivity.pdf` | core builder, styled by current figure builder |
+
+Submission filenames differ from the descriptive plotting filenames:
+
+| Plot output | Submission file | Location |
+| --- | --- | --- |
+| `01_main_motivation.pdf` | `main_figure_1.pdf` | Main Figure 1 |
+| `score_comparisons.pdf` | `score_comparisons.pdf` | Main Figure 2 |
+| `02_main_geometry.pdf` | `main_figure_2.pdf` | Main Figure 3 |
+| `05_fixed_calendar.pdf` | `main_figure_5.pdf` | Main Figure 4 |
+| `09_main_mda_dependence.pdf` | `main_figure_6.pdf` | Main Figure 5 |
+| `11_supp_feedback_selection.pdf` | `supp_figure_S1.pdf` | Supplement |
+| `03_main_sensitivity.pdf` | `main_figure_3.pdf` | Supplement |
+| `08_main_neural_matching.pdf` | `supp_figure_S2.pdf` | Supplement |
+| `10_main_weight_selection.pdf` | `main_figure_4.pdf` | Supplement |
+| `06_country_energy.pdf` | `supp_figure_S3.pdf` | Supplement |
+| `07_window_energy.pdf` | `supp_figure_S4.pdf` | Supplement; crop as specified above |
+| `paper1_nordic_window_sensitivity.pdf` | `supp_figure_S5.pdf` | Supplement |
 
 The neural figure reads the included
 `output/neural_training_comparison/combined_results.csv`.

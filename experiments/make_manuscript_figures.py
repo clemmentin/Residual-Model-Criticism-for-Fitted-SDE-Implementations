@@ -17,6 +17,7 @@ import argparse
 import importlib.util
 import json
 import os
+import shutil
 import sys
 from pathlib import Path
 from unittest.mock import patch
@@ -607,7 +608,7 @@ def nonlinear_weight_figure() -> None:
     ax.set(xlim=(-.25, 1.25), ylim=(0, 36), yticks=[0, 10, 20, 30],
            ylabel="Power (%)", xticks=[0, 1],
            xticklabels=["CDF rule\n" + r"$\ell=0.3$", "Level rule\n" + r"$\ell=0$"])
-    ax.set_title(r"(b) Power against added $Y$-noise", loc="left", pad=11)
+    ax.set_title("(b) Power after calibration\nwith true-model null samples", loc="left", pad=11)
     ax.grid(axis="y", color=GRID, lw=.4, zorder=0)
     fig.subplots_adjust(left=.15, right=.985, bottom=.24, top=.82, wspace=.72)
     for suffix in ("pdf", "png"):
@@ -669,6 +670,7 @@ def main(argv=None) -> None:
     args = parser.parse_args(argv)
     OUT = args.out_dir.resolve()
     OUT.mkdir(parents=True, exist_ok=True)
+    shutil.copyfile(ROOT / "assets/score_comparisons.pdf", OUT / "score_comparisons.pdf")
     configure()
     neural_matching_figure()
     mda_dependence_figure()

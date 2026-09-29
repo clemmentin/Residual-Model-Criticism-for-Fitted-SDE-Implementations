@@ -52,7 +52,7 @@ The current source release also includes the small per-fit neural comparison
 tables under `output/neural_training_comparison/` and the
 manuscript-cited nonlinear weight study under
 `experiments/nonlinear_weight_selection/`.
-These reproduce the main neural comparison table and the supplementary
+These reproduce the supplementary neural comparison table and the supplementary
 nonlinear comparison tables without the large artifact bundle.
 The full neural per-path scores and checkpoints are separate artifacts, or
 can be regenerated with the commands in `REPRODUCE.md`.

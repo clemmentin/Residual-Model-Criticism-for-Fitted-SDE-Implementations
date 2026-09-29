@@ -16,7 +16,7 @@
     "statsmodels",
     "tqdm"
   ],
-  "expected_figure_count": 11,
+  "expected_figure_count": 12,
   "figures": {
     "01_main_motivation": "experiments/make_manuscript_figures.py",
     "02_main_geometry": "experiments/make_manuscript_figures.py",
@@ -28,7 +28,8 @@
     "08_main_neural_matching": "experiments/make_manuscript_figures.py",
     "06_country_energy": "experiments/make_manuscript_figures.py",
     "07_window_energy": "experiments/make_manuscript_figures.py",
-    "paper1_nordic_window_sensitivity": "experiments/make_manuscript_figures.py"
+    "paper1_nordic_window_sensitivity": "experiments/make_manuscript_figures.py",
+    "score_comparisons": "assets/score_comparisons.pdf"
   },
   "current_table_sources": {
     "nonlinear-weights": "experiments/nonlinear_weight_selection/coupling/results.csv",

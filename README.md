@@ -39,7 +39,9 @@ Tables are rebuilt from included per-fit estimates and written to
 `output/tables/`; this does not rerun the experiments. Figures go to
 `output/figures/`. Missing CZE/GRC residual paths are regenerated from saved
 models and seeds, so the first figure run can take longer.
-The current paper cites four main figures and seven supplementary figures.
+The current paper cites five main figures and seven supplementary figures.
+Figure 2 is a conceptual diagram supplied in `assets/score_comparisons.pdf`;
+the figure command copies it to the output directory without simulation.
 The builder also retains three figures
 from earlier analyses; these are not cited in the current paper.
 
