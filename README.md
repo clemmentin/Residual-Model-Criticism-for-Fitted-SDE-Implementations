@@ -71,9 +71,9 @@ and simulation results. On Windows, use a short path such as `C:\repro\`.
 The source checkout alone cannot reproduce every result.
 
 The [data and model deposit](https://doi.org/10.5281/zenodo.22212995)
-currently has restricted file access. The included tables and self-contained
+is publicly available. The included tables and self-contained
 feedback study can be reproduced from this repository; analyses requiring
-the archived data or fitted models need access to the separate bundle.
+the archived data or fitted models require downloading the separate bundle.
 See [DATA_SOURCES.md](DATA_SOURCES.md) for sources and reuse terms.
 
 ## Files and documentation
